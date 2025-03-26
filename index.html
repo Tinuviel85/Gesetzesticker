@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Gesetze-Ticker</title>
+  <style type="text/css">
+    #id_buzerdiv { text-align:left; margin:auto; width:80%; overflow-y:scroll; overflow-x:hidden; max-height:500px; border:1px solid silver; }
+    #buzertitel { padding-left:5px; font-weight:bold; }
+    #buzerdatum { padding-left:5px; color:gray; }
+    #buzeraenderung { padding-left:12px; text-indent:-7px; font-weight:normal; text-decoration:none; color:black; }
+    #buzeraenderungf { padding-left:5px; font-style:italic; }
+    #buzerneu { padding-left:5px; font-style:italic; }
+  </style>
+</head>
+<body>
+  <h1>Aktuelle Gesetzesänderungen</h1>
+
+  <div id="id_buzerdiv"></div>
+
+  <script type="text/javascript">
+    id_buzerdatum = "buzerdatum";
+    id_buzertitel = "buzertitel";
+    id_buzeraenderung = "buzeraenderung";
+    id_buzeraenderungf = "buzeraenderungf";
+    id_buzerneu = "buzerneu";
+    _a_target = "_blank";
+    ohne_geaenderte_titel = 0;
+    textwennlisteleer = "Keine aktuellen Änderungen";
+
+    // Beispiel: Anzeige für Arbeitsrecht (80) und Umweltschutz (2129), max. 10 Tage alt/voraus
+    // Du kannst die FNA-Nummern nach Bedarf anpassen
+    fna = "201-4";
+    tagevergangen = "100";
+    tagenzukunft = "100";
+  </script>
+  <script type="text/javascript" charset="iso-8859-1" src="https://www.buzer.de/infobox.js"></script>
+</body>
+</html>
